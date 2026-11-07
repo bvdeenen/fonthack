@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Font obfuscation demo</title>
+<style>
+  @font-face { font-family: 'Manrope Obf'; src: url(manrope-obf.woff2) format('woff2'); }
+  body { font: 20px sans-serif; padding: 2em; }
+  .obf { font-family: 'Manrope Obf', sans-serif; font-size: 32px; }
+</style>
+<p>Real value: 0612345789</p>
+<p>HTML source (what scrapers see): 0723456891</p>
+<p>Rendered with obfuscation font: <span class="obf">0723456891</span></p>
